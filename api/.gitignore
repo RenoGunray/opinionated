@@ -1,5 +1,5 @@
 # exclude contents of images folder
-images/*
+/images/*
 
 #include the images folder
 !images/
