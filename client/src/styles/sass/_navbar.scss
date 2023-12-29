@@ -1,0 +1,83 @@
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.nav-logo {
+  font-size: 40px;
+  font-family: 'Brush Script MT';
+}
+
+.message {
+  font-size: 20px;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  
+  #{&}__username {
+    color: $gold-palace;
+    font-size: 12px;
+  }
+}
+
+.search-bar {
+  border: none;
+  width: 100%;
+  padding: .1rem .2rem;
+  // font-size: 20px;
+  font-weight: 400;
+  border-radius: .4rem;
+  background-color: $lighter-color;
+  &:focus {
+    outline: none;
+    border: 1.5px solid $gold-palace;
+  }
+}
+
+.search-btn {
+  background-color: none;
+  border: none;
+  padding: .1rem 1rem;
+  border-radius: .4rem;
+  margin: .5rem;
+}
+
+.userProfile {
+  position: relative;
+  #{&}__img {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    object-fit: cover;
+  }
+}
+
+.navItem {
+  // border: 1px solid;
+  position: relative;
+  #{&}__navLink {
+    // z-index: 10;
+    padding: 1rem;
+    text-decoration: none;
+    color: $darker-color;
+  }
+  .overlay{
+    position: absolute;
+    bottom: 0px;
+    width: 0%;
+    // height: 100%;
+    margin: auto;
+    border-bottom: 5px solid $gold-palace;
+    background-color: $gold-palace;
+    transition: all .1s ease-in;
+  }
+  &:hover {
+    .overlay {
+      width: 100%;
+    }
+  }
+}

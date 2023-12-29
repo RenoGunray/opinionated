@@ -1,0 +1,116 @@
+// .Container {
+//   width: 100%;  
+// }
+
+.dFlex {
+  display: flex;
+}
+
+.dFlex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.editor {
+  height: 70vh;
+  flex: 1;
+  //overflow-y: auto;
+  width: 100%;
+}
+
+.editor-container {
+  width: 55%;
+  margin: auto;
+}
+
+.sideCover {
+  width: 50%;
+  background-color: $darker-color;
+  display: flex;
+  align-items: center;
+  #{&}__header {
+    width: 100%;
+    &--title {
+      color: $gold-palace;
+      font-size: 150px;
+      text-align: center;
+      font-family: 'Brush Script MT';
+    }
+    &--subtitle {
+      color: $light-gold-palace;
+      font-size: 50px;
+      letter-spacing: 15px;
+      font-family: 'Courier New';
+      text-align: center;
+    }
+  }
+}
+
+.formContainer {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  // margin: auto;
+}
+
+.profile {
+  background-color: $lighter-color;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  #{&}__photo {
+    position: relative;
+    padding: 0rem 1rem; 
+    &--image {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 10rem;
+      object-fit: cover;
+    }
+  }
+  #{&}__details {
+    &--email {
+      display: flex;
+      flex-direction: column;
+    }
+    &--edit {
+      padding: .5rem 1rem;
+      border-radius: .4rem;
+      background-color: $gold-palace;
+      color: $darker-color;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .sideCover {
+    #{&}__header {
+      width: 100%;
+      &--title {
+        font-size: 100px;
+      }
+      &--subtitle {
+        font-size: 40px;
+        letter-spacing: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .editor-container {
+    width: 100%;
+  }
+  .sideCover {
+    display: none;
+  }
+  .formContainer {
+    width: 100%;
+  }
+}

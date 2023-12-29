@@ -1,0 +1,43 @@
+.width__5 {
+
+    width: 50%;
+
+}
+
+.cus-card{
+    border-radius: .3rem !important;
+    transition: all .1s ease-in-out;
+    background-color: whitesmoke;
+}
+
+.cus-card:hover{
+    border: 2px solid #8f8f8f;
+}
+
+.article-card {
+    text-decoration: none;
+}
+
+.line-height{
+    line-height: 30px;
+}
+
+.editor{
+    height: 400px;
+}
+
+.editor-container{
+    width: 70%;
+    margin: auto;
+}
+
+.img-profiles{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+
+}
+
+.cover{
+    width: 100%;
+}

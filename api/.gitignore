@@ -1,0 +1,8 @@
+# exclude contents of images folder
+images/*
+
+#include the images folder
+!images/
+
+/.env
+/node_modules

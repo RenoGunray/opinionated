@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import './sass/variables';
+@import './sass/utilities';
+@import './sass/layout';
+@import './sass/navbar';
+@import './sass/buttons';
+@import './sass/forms';
+@import './sass/card';
+@import './sass/footer';
