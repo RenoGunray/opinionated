@@ -48,8 +48,6 @@ const Single = () => {
 
   const navSlide = () => {
     const navSide = document.querySelector('.argSide');
-    const navSideLinks = document.querySelectorAll('.argSide .arg-links');
-    console.log(navSide, navSideLinks);
     navSide.classList.toggle('argSide-active');
   }
 

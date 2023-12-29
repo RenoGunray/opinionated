@@ -20,7 +20,7 @@ function Articles ({article}) {
               </div>
           </div>
       </Link>
-      <div className="border p-1 text-center postCard__actions"><i class="fa-regular fa-thumbs-up me-2 ms-2"></i><i class="fa-regular fa-comment me-2 ms-2"></i></div>
+      <div className="border p-1 text-center postCard__actions"><i className="fa-regular fa-thumbs-up me-2 ms-2"></i><i className="fa-regular fa-comment me-2 ms-2"></i></div>
       </div>
   </div>
   </>

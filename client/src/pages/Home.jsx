@@ -18,7 +18,6 @@ const Home = () => {
             try {
                 const response = await fetch('http://localhost:8800/articles');
                 const json = await response.json();
-                console.log(json);
                 // const contentType = response.headers.get('content-type');
                 if (response.ok) {
                     setArticle(json);
@@ -31,8 +30,8 @@ const Home = () => {
     }, [])
     return <>
        
-    <div class="tab-content m-auto uni-padding" id="v-pills-tabContent">
-        <div class="container tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+    <div className="tab-content m-auto uni-padding" id="v-pills-tabContent">
+        <div className="container tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
             <div className="d-flex justify-content-between mt-3">
                 <ul className="nav nav-pills">
                     <li className="navItem">

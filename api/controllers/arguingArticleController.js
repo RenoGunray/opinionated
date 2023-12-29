@@ -13,7 +13,6 @@ const GetArgue = asyncHandler(async(req, res, next) => {
 const GetSingleArg = asyncHandler(async (req, res, next) => {
   try {
     const arg = await ArguingArticle.findById(req.params.id).populate('author');
-    console.log(arg);
     if (!arg) {
       return res.status(404).json({ message: "Argument not found" });
     }
